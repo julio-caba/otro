@@ -19,7 +19,7 @@ $(document).ready(function() {
     if(validate()) {
       $.ajax({
         type: "POST",
-        url: "mailer.php",
+        url: "send.php",
         data: form.serialize(),
         dataType: "json"
       }).done(function(data) {
